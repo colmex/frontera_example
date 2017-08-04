@@ -1,5 +1,6 @@
 # Example frontera project
 This is an example frontera project, combining scrapy's quotes example and frontera's `cluster-setup` example.
+(links: `https://doc.scrapy.org/en/latest/intro/tutorial.html` and `http://frontera.readthedocs.io/en/v0.7.1/topics/cluster-setup.html`
 
 ## How to run it
 First off open a bunch (7 should be enough) of terminal windows (tmux is awesome for this).
