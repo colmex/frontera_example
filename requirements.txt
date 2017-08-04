@@ -1,0 +1,3 @@
+frontera[hbase,kafka,distributed]==0.7.1
+Scrapy==1.4.0
+msgpack-python==0.4.8
