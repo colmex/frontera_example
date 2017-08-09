@@ -9,7 +9,7 @@ services:
     ports:
       - "9092:9092"
     environment:
-      KAFKA_CREATE_TOPICS: "frontier-todo:8:1,frontier-score:2:1,frontier-done:2:1"
+      KAFKA_CREATE_TOPICS: "frontier-todo:2:1,frontier-score:2:1,frontier-done:2:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_HOST_NAME: "127.0.0.1"
     volumes:
