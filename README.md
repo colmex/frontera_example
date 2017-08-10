@@ -7,11 +7,12 @@ First off open a bunch (7 should be enough) of terminal windows (tmux is awesome
 
 ### First the backend
 Run the following cmd to get hbase, kafka, and zookeeper running. It will also create the HBase namespace.
-`docker-compose -f docker-compose-backend.yaml up -d 
+```
+docker-compose -f docker-compose-backend.yml up -d 
 echo "waiting for hbase startup (30 seconds)"
 sleep 30
-echo "create_namespace 'crawler'
-" | docker exec -i docker_hbase /hbase/bin/hbase shell`
+echo "create_namespace 'crawler'" | docker exec -i docker_hbase /hbase/bin/hbase shell
+```
 
 ### Next the Storage workers
 In a separate terminal window run `python -m frontera.worker.db --config frontier.dbworker --no-incoming`
